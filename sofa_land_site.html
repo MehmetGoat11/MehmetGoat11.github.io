@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sofa Land — Your Home, Your Style, Your Choice</title>
+<style>
+:root{--black:#090909;--gold:#d6ad55;--cream:#f5f1e8;--muted:#aaa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Inter,Arial,sans-serif}
+nav{position:fixed;z-index:10;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 6%;background:rgba(9,9,9,.78);backdrop-filter:blur(12px);border-bottom:1px solid #292929}
+.logo{font-size:24px;font-weight:800;letter-spacing:2px;color:var(--gold)}nav a{color:#eee;text-decoration:none;margin-left:24px;font-size:14px}nav a:hover{color:var(--gold)}
+.hero{min-height:92vh;display:grid;place-items:center;text-align:center;padding:120px 7% 70px;background:radial-gradient(circle at 50% 35%,#302717 0,#111 35%,#070707 70%)}
+.hero-inner{max-width:900px}.eyebrow{color:var(--gold);letter-spacing:5px;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(52px,9vw,108px);line-height:.92;margin:22px 0;font-family:Georgia,serif}.hero p{max-width:650px;margin:0 auto 34px;color:#c9c3b7;font-size:18px;line-height:1.7}
+.btn{display:inline-block;padding:15px 25px;border:1px solid var(--gold);color:var(--black);background:var(--gold);text-decoration:none;font-weight:700;margin:5px}.btn.alt{background:transparent;color:var(--gold)}
+section{padding:90px 7%}.section-title{text-align:center;font-family:Georgia,serif;font-size:44px;margin:0 0 14px}.section-sub{text-align:center;color:var(--muted);max-width:680px;margin:0 auto 50px;line-height:1.7}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{position:relative;overflow:hidden;min-height:330px;border:1px solid #292929;background:#111;transition:.35s}.card:hover{transform:translateY(-7px);border-color:var(--gold);box-shadow:0 20px 55px #000}.visual{height:250px;display:grid;place-items:center;background:linear-gradient(135deg,#24211c,#75644a 50%,#151515);font-size:22px;letter-spacing:2px;color:#eee;transition:.45s}.card:hover .visual{transform:scale(1.07)}.card-body{padding:20px}.tag{color:var(--gold);font-size:11px;text-transform:uppercase;letter-spacing:2px}.card h3{margin:8px 0;font-size:23px}.card p{color:#aaa;line-height:1.6;margin:0}
+.about{background:#0e0e0e}.about-wrap{max-width:1050px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}.about h2{font-family:Georgia,serif;font-size:52px;margin:0 0 20px}.about p{color:#bdb7ad;line-height:1.8}.stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat{padding:25px;border:1px solid #292929}.stat b{display:block;font-size:28px;color:var(--gold)}.stat span{color:#999}
+.reviews{background:#f5f1e8;color:#171717}.reviews .section-sub{color:#666}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:white;padding:28px;border:1px solid #ddd;box-shadow:0 12px 35px rgba(0,0,0,.08)}.stars{color:#7b4bd4;letter-spacing:4px;font-size:18px}.review p{line-height:1.8;color:#444}.review strong{font-size:14px}.demo{font-size:11px;color:#777;margin-top:12px}
+.tracker{max-width:750px;margin:auto;text-align:center}.tracker-box{border:1px solid #343434;padding:35px;background:#101010}.tracker input{width:min(100%,520px);padding:16px;background:#080808;border:1px solid #444;color:white;font-size:16px}.tracker button{padding:16px 25px;margin-top:12px;background:var(--gold);border:0;font-weight:700;cursor:pointer}.result{display:none;margin-top:20px;padding:18px;border:1px solid #40361f;color:#e5cf91}
+footer{padding:40px 7%;border-top:1px solid #242424;color:#777;display:flex;justify-content:space-between;gap:20px}.small{font-size:12px;line-height:1.6}
+@media(max-width:800px){nav .links{display:none}.grid,.review-grid,.about-wrap{grid-template-columns:1fr}.about h2{font-size:40px}.hero h1{font-size:58px}section{padding:70px 5%}footer{display:block}}
+</style>
+</head>
+<body>
+<nav><div class="logo">SOFA LAND</div><div class="links"><a href="#collections">Collections</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#tracking">Delivery</a></div></nav>
+
+<header class="hero">
+<div class="hero-inner">
+<div class="eyebrow">Your Home · Your Style · Your Choice</div>
+<h1>Comfort,<br>customized.</h1>
+<p>Discover sofas, sectionals, motion furniture and more — with configurations and coverings designed to fit your space and your style.</p>
+<a class="btn" href="#collections">Explore Collections</a>
+<a class="btn alt" href="#tracking">Track Delivery</a>
+</div>
+</header>
+
+<section id="collections">
+<h2 class="section-title">Find your seat</h2>
+<p class="section-sub">From refined stationary sectionals to deep lounge seating and power reclining, explore a collection built around comfort and choice.</p>
+<div class="grid">
+<article class="card"><div class="visual">SECTIONALS</div><div class="card-body"><span class="tag">Custom configurations</span><h3>Sectionals</h3><p>Choose your configuration and explore a wide range of fabric and leather options.</p></div></article>
+<article class="card"><div class="visual">SOFAS</div><div class="card-body"><span class="tag">Classic comfort</span><h3>Sofas & Loveseats</h3><p>Clean silhouettes, comfortable seating and options made to complement your space.</p></div></article>
+<article class="card"><div class="visual">MOTION</div><div class="card-body"><span class="tag">Power relaxation</span><h3>Reclining</h3><p>Power reclining, adjustable headrests and other comfort-focused features on selected models.</p></div></article>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="about-wrap">
+<div><div class="eyebrow">Quality · Style · Choice</div><h2>Make it yours.</h2><p>Sofa Land specializes in sofas, loveseats, chairs, motion furniture and sectionals, with custom ordering at the heart of the experience.</p><p>Selected models can be ordered in different configurations and coverings, giving you the flexibility to create a piece that fits your room and your décor.</p></div>
+<div class="stats"><div class="stat"><b>Hundreds</b><span>of fabric options on selected custom models</span></div><div class="stat"><b>Made in Canada</b><span>featured across many custom collections</span></div><div class="stat"><b>2 Cities</b><span>Edmonton & Calgary distribution centres</span></div><div class="stat"><b>Online + In Store</b><span>shop in the way that works for you</span></div></div>
+</div>
+</section>
+
+<section id="reviews" class="reviews">
+<h2 class="section-title">What customers say</h2>
+<p class="section-sub">A few sample testimonials for this website concept.</p>
+<div class="review-grid">
+<div class="review"><div class="stars">★★★★★</div><p>“The whole experience felt easy from start to finish. We were able to compare different styles, talk through what would work in our room, and find a configuration that actually made sense for our space.”</p><strong>— Sarah M.</strong><div class="demo">Sample website testimonial — not a verified customer review.</div></div>
+<div class="review"><div class="stars">★★★★★</div><p>“We wanted something comfortable without sacrificing the look of the room. The selection gave us plenty of choices, and the ability to customize the fabric made a huge difference. The finished sectional feels like it belongs in the space.”</p><strong>— Daniel R.</strong><div class="demo">Sample website testimonial — not a verified customer review.</div></div>
+<div class="review"><div class="stars">★★★★★</div><p>“There were so many combinations that we could really think about how we wanted the room to feel. The final result is comfortable, practical and exactly the kind of centerpiece we were hoping for.”</p><strong>— Olivia K.</strong><div class="demo">Sample website testimonial — not a verified customer review.</div></div>
+</div>
+</section>
+
+<section id="tracking">
+<div class="tracker"><div class="eyebrow">Delivery tracking</div><h2 class="section-title">Where's my sofa?</h2><p class="section-sub">Enter your order phone number or invoice number to check a delivery status.</p>
+<div class="tracker-box"><input id="order" placeholder="Phone or invoice number"><br><button onclick="track()">Check delivery</button><div id="result" class="result"></div></div>
+<p class="small">Demo interface: this page is not connected to Sofa Land's live order system. A production version would connect to the store's actual tracking service.</p></div>
+</section>
+
+<footer><div><div class="logo">SOFA LAND</div><div class="small">Your Home, Your Style, Your Choice</div></div><div class="small">Portfolio / concept website · Not an official Sofa Land website</div></footer>
+
+<script>
+function track(){
+ const v=document.getElementById('order').value.trim();
+ const r=document.getElementById('result');
+ if(!v){r.style.display='block';r.textContent='Please enter an order phone number or invoice number.';return}
+ r.style.display='block';
+ r.innerHTML='<strong>Demo status</strong><br>Your order number was received. Connect this interface to the store’s real tracking system to show live delivery information.';
+}
+</script>
+</body>
+</html>
